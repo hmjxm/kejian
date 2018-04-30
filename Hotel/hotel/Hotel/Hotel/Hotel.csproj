@@ -1,0 +1,513 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1DCE2353-4285-4776-9852-4B5BFBF563B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hotel</RootNamespace>
+    <AssemblyName>Hotel</AssemblyName>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="IrisSkin2, Version=2006.3.22.45, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddAworkeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAworkeForm.Designer.cs">
+      <DependentUpon>AddAworkeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCust.designer.cs">
+      <DependentUpon>AddCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEmployee.Designer.cs">
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHouse.Designer.cs">
+      <DependentUpon>AddHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddHouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHouseForm.Designer.cs">
+      <DependentUpon>AddHouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWareForm.designer.cs">
+      <DependentUpon>AddWareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AwokeFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AwokeFrom.Designer.cs">
+      <DependentUpon>AwokeFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseSetForm.Designer.cs">
+      <DependentUpon>BaseSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookHouse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookHouse.designer.cs">
+      <DependentUpon>BookHouse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookInfall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookInfall.designer.cs">
+      <DependentUpon>BookInfall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BusinessForm.designer.cs">
+      <DependentUpon>BusinessForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm.designer.cs">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsumeForm.designer.cs">
+      <DependentUpon>ConsumeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DepositManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DepositManage.Designer.cs">
+      <DependentUpon>DepositManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoId.cs" />
+    <Compile Include="FeedbackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackForm.designer.cs">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefrayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefrayForm.Designer.cs">
+      <DependentUpon>DefrayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GroupAddHouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GroupAddHouseForm.Designer.cs">
+      <DependentUpon>GroupAddHouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryForm.Designer.cs">
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hook.cs" />
+    <Compile Include="HouseHelper.cs" />
+    <Compile Include="IsAwoke.cs" />
+    <Compile Include="Lock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lock.Designer.cs">
+      <DependentUpon>Lock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member.designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddConsume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddConsume.designer.cs">
+      <DependentUpon>AddConsume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MoneySelsct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MoneySelsct.designer.cs">
+      <DependentUpon>MoneySelsct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlusForm.Designer.cs">
+      <DependentUpon>PlusForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Purview.cs" />
+    <Compile Include="PurviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurviewForm.Designer.cs">
+      <DependentUpon>PurviewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PwdValidate   .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PwdValidate   .designer.cs">
+      <DependentUpon>PwdValidate   .cs</DependentUpon>
+    </Compile>
+    <Compile Include="RescindForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RescindForm.designer.cs">
+      <DependentUpon>RescindForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SameName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SameName.Designer.cs">
+      <DependentUpon>SameName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendEmail.cs" />
+    <Compile Include="SericesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SericesForm.Designer.cs">
+      <DependentUpon>SericesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShiftExchange .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShiftExchange .designer.cs">
+      <DependentUpon>ShiftExchange .cs</DependentUpon>
+    </Compile>
+    <Compile Include="SoftWareSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SoftWareSet.Designer.cs">
+      <DependentUpon>SoftWareSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SwapHouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SwapHouseForm.Designer.cs">
+      <DependentUpon>SwapHouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CashierForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashierForm.Designer.cs">
+      <DependentUpon>CashierForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAworkeForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddAworkeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCust.resx">
+      <DependentUpon>AddCust.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddEmployee.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHouse.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddHouse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHouseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddHouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWareForm.resx">
+      <DependentUpon>AddWareForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AwokeFrom.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AwokeFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BaseSetForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaseSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookHouse.resx">
+      <DependentUpon>BookHouse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookInfall.resx">
+      <DependentUpon>BookInfall.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BusinessForm.resx">
+      <DependentUpon>BusinessForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm.resx">
+      <DependentUpon>ClientForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsumeForm.resx">
+      <DependentUpon>ConsumeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DepositManage.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DepositManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackForm.resx">
+      <DependentUpon>FeedbackForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefrayForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DefrayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GroupAddHouseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GroupAddHouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lock.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Lock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddConsume.resx">
+      <DependentUpon>AddConsume.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MoneySelsct.resx">
+      <DependentUpon>MoneySelsct.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlusForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PlusForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurviewForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PurviewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PwdValidate   .resx">
+      <DependentUpon>PwdValidate   .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RescindForm.resx">
+      <DependentUpon>RescindForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SameName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SameName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SericesForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SericesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShiftExchange .resx">
+      <DependentUpon>ShiftExchange .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SoftWareSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SoftWareSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SwapHouseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SwapHouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashierForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CashierForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JoinHouseForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>JoinHouseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnderwriteForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnderwriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnitFillForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UnitFillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatePriceForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UpdatePriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ValidatePass.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ValidatePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="JoinHouseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JoinHouseForm.Designer.cs">
+      <DependentUpon>JoinHouseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnderwriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnderwriteForm.Designer.cs">
+      <DependentUpon>UnderwriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnitFillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnitFillForm.Designer.cs">
+      <DependentUpon>UnitFillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatePriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdatePriceForm.Designer.cs">
+      <DependentUpon>UpdatePriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHelper.cs" />
+    <Compile Include="ValidatePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ValidatePass.Designer.cs">
+      <DependentUpon>ValidatePass.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\AddHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\BookHouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\foregrounding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\goOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\Login_pwd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\Login_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\BackTrack.png" />
+    <Content Include="Logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

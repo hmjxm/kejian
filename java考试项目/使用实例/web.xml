@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  
+         <servlet>
+            <servlet-name>one</servlet-name>
+            <servlet-class>com.mvc.servlet.loginservlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+            <servlet-name>one</servlet-name>
+            <url-pattern>/loginServlet</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+            <servlet-name>two</servlet-name>
+            <servlet-class>com.mvc.servlet.regservlet</servlet-class>
+         </servlet>       
+         <servlet-mapping>
+            <servlet-name>two</servlet-name>
+            <url-pattern>/regServlet</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+            <servlet-name>three</servlet-name>
+            <servlet-class>com.mvc.servlet.exitservlet</servlet-class>
+         </servlet>        
+         <servlet-mapping>
+            <servlet-name>three</servlet-name>
+            <url-pattern>/exitServlet</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+            <servlet-name>four</servlet-name>
+            <servlet-class>com.mvc.servlet.fogservlet</servlet-class>
+         </servlet>        
+         <servlet-mapping>
+            <servlet-name>four</servlet-name>
+            <url-pattern>/fogServlet</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+            <servlet-name>five</servlet-name>
+            <servlet-class>com.mvc.servlet.zxservlet</servlet-class>
+         </servlet>        
+         <servlet-mapping>
+            <servlet-name>five</servlet-name>
+            <url-pattern>/zxServlet</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+            <servlet-name>six</servlet-name>
+            <servlet-class>com.mvc.servlet1.showservlet</servlet-class>
+         </servlet>        
+         <servlet-mapping>
+            <servlet-name>six</servlet-name>
+            <url-pattern>/showServlet</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+    <servlet-name>seven</servlet-name>
+    <servlet-class>com.mvc.servlet1.insservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>seven</servlet-name>
+    <url-pattern>/insServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>eight</servlet-name>
+    <servlet-class>com.mvc.servlet1.delservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>eight</servlet-name>
+    <url-pattern>/delServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>nine</servlet-name>
+    <servlet-class>com.mvc.servlet1.updservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>nine</servlet-name>
+    <url-pattern>/updServlet</url-pattern>
+  </servlet-mapping>
+     
+    <servlet>
+    <servlet-name>ten</servlet-name>
+    <servlet-class>com.mvc.servlet1.queservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ten</servlet-name>
+    <url-pattern>/queServlet</url-pattern>
+  </servlet-mapping>
+         
+</web-app>
